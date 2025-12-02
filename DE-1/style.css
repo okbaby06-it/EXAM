@@ -1,0 +1,55 @@
+body,
+html {
+  font-family: "Times New Roman", serif !important;
+}
+
+/* header */
+.header-custom {
+  height: 100px;
+  background-color: #01127d;
+}
+
+/* phần menu bên trái */
+.menu-left {
+  background-color: #00196d;
+  border: 1px solid #000;
+}
+
+.menu-left .item {
+  display: block;
+  padding: 10px 15px;
+  border-bottom: 1px solid #000;
+  color: white;
+  cursor: pointer;
+}
+
+.menu-left .item.active {
+  background-color: yellow;
+  color: black;
+  font-weight: bold;
+}
+
+.menu-left .item:hover {
+  background-color: #022b96;
+}
+
+/* phần menu bên phải */
+.col-9 h3.text-center {
+  padding: 20px 0 !important;
+}
+
+/* phần button */
+.button-custom {
+  padding: 20px 0;
+}
+
+.button-custom .btn-custom {
+  border: 0.8px solid rgb(131, 131, 131);
+  border-radius: 4px;
+}
+
+/* FORM */
+form {
+  border: 1px solid #000;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 4px;
+}

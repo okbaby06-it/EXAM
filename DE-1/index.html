@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- nhúng bt js -->
+    <link
+      rel="stylesheet"
+      href="./bootstrap-5.3.8-dist/css/bootstrap.min.css"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form onsubmit="return checkInfo()">
+      <div class="container-fluid p-0">
+        <!-- header -->
+        <div
+          class="header-custom d-flex justify-content-center align-items-center row"
+        >
+          <div class="col-3"></div>
+          <h2 class="text-white fw-bold m-0 col-9 text-center">THIẾT KẾ WEB</h2>
+        </div>
+
+        <div class="container-fluid">
+          <div class="row">
+            <!-- menu bên trái -->
+            <div class="col-3 p-0">
+              <div class="menu-left">
+                <a href="#" class="item active text-primary"
+                  >Danh sách sản phẩm</a
+                >
+                <a href="#" class="item">Thêm sản phẩm</a>
+                <a href="#" class="item">Sửa sản phẩm</a>
+                <a href="#" class="item">Danh sách đơn hàng</a>
+              </div>
+            </div>
+
+            <!-- menu bên phải -->
+            <div class="col-9">
+              <h3 class="text-center fw-bold">Nhập thông tin sản phẩm</h3>
+
+              <div class="row mb-2">
+                <label class="col-2 col-form-label">Ngành hàng</label>
+                <div class="col-10">
+                  <select name="LoaiHinh" id="loaiHinh" class="form-select">
+                    <option value="Thời Trang">Thời trang</option>
+                    <option value="Điện tử">Điện tử</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="row mb-2">
+                <label for="nameSP" class="col-2 col-form-label"
+                  >Tên sản phẩm</label
+                >
+                <div class="col-10">
+                  <input
+                    name="nameSP"
+                    id="nameSP"
+                    type="text"
+                    class="form-control"
+                  />
+                </div>
+              </div>
+
+              <div class="row mb-2">
+                <label for="maSP" class="col-2 col-form-label"
+                  >Mã sản phẩm</label
+                >
+                <div class="col-10">
+                  <input
+                    name="maSP"
+                    id="maSP"
+                    type="text"
+                    class="form-control"
+                  />
+                </div>
+              </div>
+
+              <div class="row mb-2">
+                <label class="col-2 col-form-label">Tình trạng hàng</label>
+                <div class="col-4 d-flex align-items-center gap-3">
+                  <label
+                    ><input type="radio" name="Tình trạng" id="conHang" /> Còn
+                    hàng</label
+                  >
+                  <label
+                    ><input type="radio" name="Tình trạng" id="hetHang" /> Hết
+                    hàng</label
+                  >
+                </div>
+
+                <label class="col-1 col-form-label">Đơn vị</label>
+                <div class="col-5">
+                  <select class="form-select">
+                    <option>Cái</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="row mb-2">
+                <label class="col-2 col-form-label">Vận chuyển</label>
+                <div class="col-10 d-flex gap-4 align-items-center">
+                  <label
+                    ><input name="vanChuyen" id="cPTieuChuan" type="checkbox" />
+                    Chuyển phát tiêu chuẩn</label
+                  >
+                  <label
+                    ><input name="vanChuyen" id="cPBuuDKen" type="checkbox" />
+                    Chuyển phát bưu kiện</label
+                  >
+                </div>
+              </div>
+
+              <div class="row mb-2">
+                <label for="moTa" class="col-2 col-form-label">Mô tả</label>
+                <div class="col-10">
+                  <textarea
+                    id="moTa"
+                    class="form-control"
+                    style="height: 150px"
+                  ></textarea>
+                </div>
+              </div>
+
+              <div class="button-custom text-center mt-3">
+                <button id="luu" class="btn-custom" type="submit">Lưu</button>
+                <button id="reset" class="btn-custom" type="reset">
+                  Nhập lại
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+    <!-- nhúng bt js -->
+    <script src="./bootstrap-5.3.8-dist/js/bootstrap.min.js"></script>
+    <!-- js -->
+    <script src="main.js"></script>
+  </body>
+</html>
